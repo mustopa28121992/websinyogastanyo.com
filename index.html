@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>KARYA</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="banner">
+            <div class="container">
+                <div id="navbar">
+                    <img name="slide" width="100%" height="400">
+                    <!-- <img class="slides" src="img/bikinan.jpg"/>
+                    <img class="slides" src="img/karyaaaa.jpg"/>
+                    <img class="slides" src="img/download.jpg"/>
+                    <img class="slides" src="img/bantuann.jpg"/>
+                    <img class="slides" src="img/pastibis.jpg"/>
+                    <button class="btn" onclick="plusIndex(1)" id="btn1">&#10094;</button>
+                    <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button> -->
+                </div>
+                <div class="box">
+                    <h1><a href="https://mustopa28121992.github.io/profil/">Kontak Saya</a></h1>
+                </div>
+                <div class="brand">
+                    <div class="icon">
+                        <a href="https://mustopa28121992.github.io/grab../">
+                            <img src="img/karyaaaa.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="icon">
+                        <a href="https://mustopa28121992.github.io/projectt/">
+                            <img src="img/bikinan.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="icon">
+                        <a href="https://mustopa28121992.github.io/jasaconec/">
+                            <img src="img/download.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="list-wrapper">
+                    <div class="wrapper">
+                        <h1>Ini deskripsi dari setiap proyek yang ditampilkan</h1>
+                    </div>
+                    <div class="wrapper">
+                        <h1>Ini deskripsi dari setiap proyek yang ditampilkan</h1>
+                    </div>
+                    <div class="wrapper">
+                        <h1>Ini deskripsi dari setiap proyek yang ditampilkan</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 3000;
+
+            images[0] = 'img/karyaaaa.jpg';
+            images[1] = 'img/bikinan.jpg';
+            images[2] = 'img/download.jpg';
+            // images[3] = 'img/bantuann.jpg';
+            // images[4] = 'img/pastibis.jpg';
+
+            function changeImg(){
+                document.slide.src = images[i];
+
+                if(i < images.length - 1){
+                    i ++;
+
+                } else{
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+
+            window.onload = changeImg;
+
+
+
+            </script>
+
+            <!-- <script>
+                var index = 1;
+
+                function plusIndex(n){
+                    index = index + 1;
+                    showImage(index);
+                }
+
+                showImage(1);
+
+                var i;
+
+                function showImage(n){
+                    var x = document.getElementsByClassName("slides");
+                    if(n > x.length){ index = 1};
+                    if(n < 1){ index = x.length};
+                    for(i=0;i<x.length;i++)
+                        {
+                            x[i].style.display = "none";
+                        }
+                    x[index-1].style.display = "block";
+                }
+            </script> -->
+
+    </body>
+</html>
